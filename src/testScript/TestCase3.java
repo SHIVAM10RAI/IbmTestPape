@@ -1,5 +1,7 @@
 package testScript;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -31,6 +33,19 @@ public Amazon amazon;
 		driver.findElement(By.xpath("//img[@alt='6-8 yrs']")).click();
 		driver.findElement(By.xpath("//div[@class='bxc-grid__column  bxc-grid__column--4-of-12   bxc-grid__column--light']//img[@alt='Story books']")).click();
 		driver.findElement(By.xpath("//span[text()='Waiting Is Not Easy!']")).click();
+		String mwin = driver.getWindowHandle();
+		Set<String> window = driver.getWindowHandles();
+		
+		for (String string : window) 
+		{
+			
+			if (!mwin.equals(string))
+			{
+				driver.switchTo().window(string).close();
+			}
+			
+		}
+		driver.switchTo().window(mwin);
 		driver.findElement(By.xpath("//a[@aria-label='Amazon']")).click();
 	}
 	

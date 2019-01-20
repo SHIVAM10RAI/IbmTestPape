@@ -22,7 +22,7 @@ public class BaseTest implements Constant {
 	@AfterMethod
    public void CloseBrowse() {
 		
-		driver.quit();
+		driver.close();
 
 	}
 }

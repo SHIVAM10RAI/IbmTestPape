@@ -9,6 +9,7 @@ package testScript;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -51,25 +52,33 @@ public class TestCase1 extends BaseTest {
 		Thread.sleep(2000);
 		
 		//Shifting Child Window For Add To cart the Item
-	    
+	    String mainwin = driver.getWindowHandle();
 		Set<String> subWindow = driver.getWindowHandles();
-	    for (String string : subWindow) {
-			 driver.switchTo().window(string);
-		}
+	    for (String string : subWindow) 
+	    {
+		 driver.switchTo().window(string);
+		 if (!mainwin.equals(string))
+		{
 	    WebElement cart = driver.findElement(By.xpath("//*[@id='add-to-cart-button']"));
 		WebElement Acart = amazon.cartLink();
-		amazon.findCartbutton(cart);
+		amazon.findCartbutton(cart); 
 		Acart.click();
 	    WebElement count = driver.findElement(By.xpath("//span[@id='nav-cart-count']"));
 	    String actpcountRsut = count.getText();
 	    System.out.println(actpcountRsut);
 	    String ExpcountRsut="1";
 	    Assert.assertEquals(actpcountRsut, ExpcountRsut);
+	    
 	    {
 	    	Reporter.log("Item Is Added To The Cart",true);
+	    	
 	    }
 	    Reporter.log("Item Is Added To The Cart",false);
-	   	
-
-	} 
-}
+	}
+		 else {
+				driver.switchTo().window(string).close();
+				}
+	       	 }
+          }
+	   }
+	

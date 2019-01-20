@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Amazon Logo Is Present]]>
@@ -17,16 +17,16 @@
       <![CDATA[Item Is Added To The Cart]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="65049" started-at="2019-01-19T12:40:33Z" finished-at="2019-01-19T12:41:38Z">
+  <suite name="Default suite" duration-ms="34280" started-at="2019-01-20T12:34:07Z" finished-at="2019-01-20T12:34:42Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="65049" started-at="2019-01-19T12:40:33Z" finished-at="2019-01-19T12:41:38Z">
+    <test name="Default test" duration-ms="34280" started-at="2019-01-20T12:34:07Z" finished-at="2019-01-20T12:34:42Z">
       <class name="testScript.TestCase1">
-        <test-method status="PASS" signature="OpenBrowse()[pri:0, instance:testScript.TestCase1@1f57539]" name="OpenBrowse" is-config="true" duration-ms="7830" started-at="2019-01-19T12:40:33Z" finished-at="2019-01-19T12:40:41Z">
+        <test-method status="PASS" signature="OpenBrowse()[pri:0, instance:testScript.TestCase1@e320068]" name="OpenBrowse" is-config="true" duration-ms="7526" started-at="2019-01-20T12:34:07Z" finished-at="2019-01-20T12:34:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowse -->
-        <test-method status="PASS" signature="Scenario1a()[pri:0, instance:testScript.TestCase1@1f57539]" name="Scenario1a" duration-ms="21973" started-at="2019-01-19T12:40:41Z" finished-at="2019-01-19T12:41:03Z">
+        <test-method status="PASS" signature="Scenario1a()[pri:0, instance:testScript.TestCase1@e320068]" name="Scenario1a" duration-ms="24367" started-at="2019-01-20T12:34:15Z" finished-at="2019-01-20T12:34:39Z">
           <reporter-output>
             <line>
               <![CDATA[Amazon Logo Is Present]]>
@@ -45,25 +45,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- Scenario1a -->
-        <test-method status="PASS" signature="CloseBrowse()[pri:0, instance:testScript.TestCase1@1f57539]" name="CloseBrowse" is-config="true" duration-ms="773" started-at="2019-01-19T12:41:03Z" finished-at="2019-01-19T12:41:04Z">
+        <test-method status="PASS" signature="CloseBrowse()[pri:0, instance:testScript.TestCase1@e320068]" name="CloseBrowse" is-config="true" duration-ms="2358" started-at="2019-01-20T12:34:39Z" finished-at="2019-01-20T12:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowse -->
       </class> <!-- testScript.TestCase1 -->
-      <class name="testScript.TestCase3">
-        <test-method status="PASS" signature="OpenBrowse()[pri:0, instance:testScript.TestCase3@76f2b07d]" name="OpenBrowse" is-config="true" duration-ms="6377" started-at="2019-01-19T12:41:04Z" finished-at="2019-01-19T12:41:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowse -->
-        <test-method status="PASS" signature="scenario2()[pri:0, instance:testScript.TestCase3@76f2b07d]" name="scenario2" duration-ms="27265" started-at="2019-01-19T12:41:10Z" finished-at="2019-01-19T12:41:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scenario2 -->
-        <test-method status="PASS" signature="CloseBrowse()[pri:0, instance:testScript.TestCase3@76f2b07d]" name="CloseBrowse" is-config="true" duration-ms="813" started-at="2019-01-19T12:41:37Z" finished-at="2019-01-19T12:41:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowse -->
-      </class> <!-- testScript.TestCase3 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
