@@ -9,7 +9,7 @@ import library.BasePage;
 
 public class GooglePOM extends BasePage {
 	
-	public GooglePOM(WebDriver driver) {
+	public GooglePOM(WebDriver driver) {//
 		super(driver);
 	}
 	@FindBy(name="q")
